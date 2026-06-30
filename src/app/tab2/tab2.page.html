@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>Kelola Produk</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Ringkasan Informasi Toko</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item bgcolor="transparent">
+          <ion-icon name="cube" slot="start" color="primary"></ion-icon>
+          <ion-label>Total Produk Aktif: <strong>120 Item</strong></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="trending-up" slot="start" color="success"></ion-icon>
+          <ion-label>Produk Terlaris: <strong>Laptop Gaming</strong></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="pricetag" slot="start" color="warning"></ion-icon>
+          <ion-label>Promo Aktif: <strong>Diskon Akhir Bulan 10%</strong></ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="ion-padding">
+    <h3>Tambah Produk Baru</h3>
+  </div>
+
+  <ion-list class="ion-margin-horizontal">
+    <ion-item>
+      <ion-input label="Nama Produk" labelPlacement="stacked" placeholder="Masukkan nama produk"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea label="Deskripsi Produk" labelPlacement="stacked" placeholder="Tulis deskripsi spesifikasi produk secara detail..."></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Harga (Rp)" type="number" labelPlacement="stacked" placeholder="Contoh: 50000"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Jumlah Stok" type="number" labelPlacement="stacked" placeholder="Contoh: 10"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Kategori" labelPlacement="stacked" placeholder="Pilih Kategori">
+        <ion-select-option value="elektronik">Elektronik</ion-select-option>
+        <ion-select-option value="pakaian">Pakaian / Fashion</ion-select-option>
+        <ion-select-option value="aksesoris">Aksesoris</ion-select-option>
+        <ion-select-option value="olahraga">Olahraga</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="none" class="ion-margin-top">
+      <ion-toggle color="success" checked="true">Publikasikan Langsung ke Toko</ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-padding">
+    <ion-button expand="block" color="secondary">
+      <ion-icon name="save-outline" slot="start"></ion-icon>
+      Simpan Produk
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="light" class="ion-text-center">
+    <ion-note>Pastikan data form terisi dengan benar sebelum disimpan</ion-note>
+  </ion-toolbar>
+</ion-footer>
